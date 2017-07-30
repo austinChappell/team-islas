@@ -45,7 +45,7 @@ body {
 }
 
 .dark-background {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.5);
   box-sizing: border-box;
   padding: 20px;
   border: 2px solid #EEFFED;
@@ -89,13 +89,6 @@ body {
   height: 100%;
 }
 
-.bio-title {
-  text-align: center;
-  margin: 20px 0;
-  text-transform: uppercase;
-  color: #EEFFED;
-}
-
 .bio-headshot {
   border: 1px solid #EEFFED;
   border-radius: 50%;
@@ -120,6 +113,87 @@ body {
 
 .top-banner img {
   width: 100%;
+  padding-top: 50px;
+}
+
+.bio-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #EEFFED;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+#patricia-bio {
+  background-image: url('assets/images/patricia-banner-dark-01.png');
+  padding: 20px 20px 20px 40%;
+  text-align: right;
+}
+
+#doug-bio {
+  background-image: url('assets/images/doug-bush-banner-dark-3.png');
+  padding: 20px 40% 20px 20px;
+  text-align: left;
+  background-position: 100%;
+}
+
+.bio-title {
+  margin: 0;
+  font-size: 32px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #EEFFED;
+}
+
+.bio img {
+  width: 100%;
+  position: absolute;
+}
+
+.form-title {
+  text-align: center;
+  color: #EEFFED;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #7B637F;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #7B637F;
+  color: #EEFFED;
+  border: 1px solid #EEFFED;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 4px 12px;
+}
+
+.contact-form button:hover {
+  background-color: #2C1425;
+}
+
+#submit-button {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1100px) {
