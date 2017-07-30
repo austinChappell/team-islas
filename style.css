@@ -41,27 +41,27 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #211721;
-  height: 100vh;
+  min-height: 100vh;
   /*position: relative;*/
 }
 
 #main-banner {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(0,0,0,0.7);
 }
 
 #promo-headline {
   color: #EEFFED;
   margin-top: 0;
-  padding-top: 30vh;
+  padding-top: 80px;
   text-align: center;
 }
 
 #promo-vid-wrapper {
-  width: 400px;
-  height: 300px;
-  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto 30px;
 }
 
 #promo-vid {
@@ -69,9 +69,16 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
+  #promo-vid-wrapper {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   #promo-headline {
-    padding-top: 20vh;
+    font-size: 22px;
   }
 
   #promo-vid-wrapper {
