@@ -42,7 +42,7 @@ body {
   background-size: cover;
   background-color: #211721;
   height: 100vh;
-  position: relative;
+  /*position: relative;*/
 }
 
 #main-banner {
@@ -58,12 +58,15 @@ body {
   text-align: center;
 }
 
-#promo-vid {
-  position: absolute;
+#promo-vid-wrapper {
   width: 400px;
   height: 300px;
-  top: 40vh;
-  left: calc(50vw - 200px);
+  margin: 0 auto;
+}
+
+#promo-vid {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 500px) {
@@ -71,10 +74,8 @@ body {
     padding-top: 20vh;
   }
 
-  #promo-vid {
+  #promo-vid-wrapper {
     width: 300px;
     height: 225px;
-    left: calc(50vw - 150px);
-    top: 30vh;
   }
 }
