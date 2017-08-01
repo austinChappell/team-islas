@@ -126,16 +126,17 @@ body {
 }
 
 #patricia-bio {
-  background-image: url('assets/images/patricia-banner-dark-01.png');
-  padding: 40px 40px 40px 40%;
-  text-align: right;
+  background-image: url('assets/images/patricia-banner.jpg');
+  padding: 40px 30% 40px 40px;
+  text-align: left;
+  background-position: 100%;
 }
 
 #doug-bio {
-  background-image: url('assets/images/doug-bush-banner-dark-3.png');
-  padding: 40px 40% 40px 40px;
-  text-align: left;
-  background-position: 100%;
+  background-image: url('assets/images/doug-banner-blur.jpg');
+  padding: 40px 40px 40px 30%;
+  text-align: right;
+  /*background-position: 0%;*/
 }
 
 .bio-title {
