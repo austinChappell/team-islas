@@ -10,7 +10,9 @@ quoteSectionArray.forEach((section) => {
     let windowBottom = window.scrollY + window.outerHeight;
     if (windowBottom > midOfElem) {
       section.style.opacity = '1';
-      section.children[1].style.left = 0;
+      section.children[0].style.left = 0;
+      // margin-left is for mobile
+      section.children[0].style.marginLeft = 0;
     }
   })
 })
