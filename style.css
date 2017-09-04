@@ -40,18 +40,23 @@
   .super-hands-page a > button:hover {
     background-color: #2D4B52; }
   .super-hands-page .quote {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    margin: 30px 0; }
+    margin: 30px 0;
+    position: relative;
+    min-height: 250px;
+    transition: 1000ms; }
   .super-hands-page .image-container {
     text-align: center;
     align-content: center;
-    width: 30%; }
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: -800px;
+    transition: 1000ms; }
   .super-hands-page .quote-container {
     display: inline-block;
     width: 70%;
-    vertical-align: top; }
+    vertical-align: top;
+    margin-left: 30%; }
   .super-hands-page .quote-author-image {
     max-width: 125px;
     height: auto;
