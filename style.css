@@ -85,8 +85,6 @@
     .super-hands-page .image-container, .super-hands-page .quote-container {
       width: 100%;
       position: static; }
-    .super-hands-page .image-container {
-      margin-left: -800px; }
     .super-hands-page hr {
       display: block;
       border-width: 2px; } }
