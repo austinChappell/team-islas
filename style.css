@@ -1,13 +1,92 @@
+.super-hands-page {
+  background: #FFF; }
+  .super-hands-page .main-background {
+    background: #FFF; }
+  .super-hands-page .banner {
+    width: 100%; }
+  .super-hands-page .purchase-cta {
+    text-align: center;
+    padding-top: 60px; }
+    .super-hands-page .purchase-cta .purchase-button {
+      border: 2px solid #323667;
+      color: #323667;
+      padding: 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.1em; }
+      .super-hands-page .purchase-cta .purchase-button:hover {
+        text-decoration: none;
+        background-color: #323667;
+        color: #FFF; }
+  .super-hands-page .testimonials {
+    text-align: center;
+    color: #323667;
+    font-weight: 900;
+    margin-bottom: 20px; }
+  .super-hands-page #book-image-link {
+    display: block;
+    margin-bottom: 20px; }
+  .super-hands-page a > button {
+    background-color: #94CCF4;
+    border-radius: 20px;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px grey; }
+  .super-hands-page a > button:hover {
+    background-color: #2D4B52; }
+  .super-hands-page .quote {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 30px 0; }
+  .super-hands-page .image-container {
+    align-content: center;
+    width: 30%; }
+  .super-hands-page .quote-container {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top; }
+  .super-hands-page .quote-author-image {
+    max-width: 125px;
+    height: auto;
+    border-radius: 50%; }
+  .super-hands-page blockquote {
+    width: 100%;
+    height: 100%;
+    text-align: left; }
+  .super-hands-page .quote-author p {
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center; }
+  .super-hands-page span.name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 4px; }
+  .super-hands-page hr {
+    display: none; }
+  @media screen and (max-width: 768px) {
+    .super-hands-page .quote {
+      display: block; }
+    .super-hands-page .image-container, .super-hands-page .quote-container {
+      width: 100%; }
+    .super-hands-page hr {
+      display: block;
+      border-width: 2px; } }
+
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  background: black;
-}
+  background: #080B10; }
 
 .container {
   width: 80%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .navbar {
   margin-bottom: 0;
@@ -17,155 +96,132 @@ body {
   border-radius: 0;
   background-color: #7B637F;
   border: none;
-  color: #EEFFED;
-}
+  color: #FFF; }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
-  color: white;
-  text-transform: uppercase;
-}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: #FFF;
+  text-transform: uppercase; }
 
 .navbar-default .navbar-brand {
-  font-size: 20px;
-}
+  font-size: 20px; }
+  .navbar-default .navbar-brand:hover {
+    color: #FFF; }
 
-.navbar-default .navbar-nav>li>a {
-  font-size: 16px;
-}
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px; }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #323667; }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #EEFFED;
-}
+  background-color: #FFF; }
 
 .main-background {
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #211721;
+  background-color: #080B10;
   min-height: 100vh;
-  background-attachment: fixed;
-}
+  background-attachment: fixed; }
 
 .dark-background {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   padding: 20px;
-  border: 2px solid #EEFFED;
+  border: 2px solid #FFF;
   border-radius: 5px;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 #landing-page {
-  background-image: url('assets/images/home.jpg');
-}
+  background-image: url("assets/images/home.jpg"); }
 
 #about-page {
-  background-image: url('assets/images/about-purple.jpg');
-}
+  background-image: url("assets/images/about-purple.jpg"); }
 
 #main-banner {
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(0,0,0,0.7);
-}
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .page-content {
   padding-top: 80px;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 #promo-headline {
-  color: #EEFFED;
+  color: #FFF;
   margin-top: 0;
-  text-align: center;
-}
+  text-align: center; }
 
 #promo-vid-wrapper {
   width: 800px;
   height: 600px;
-  margin: 0 auto 30px;
-}
+  margin: 0 auto 30px; }
 
 #promo-vid {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .bio-headshot {
-  border: 1px solid #EEFFED;
+  border: 1px solid #FFF;
   border-radius: 50%;
   float: left;
   margin-right: 30px;
   margin-bottom: 10px;
-  width: 150px;
-}
+  width: 150px; }
 
 #about-page p {
-  color: #EEFFED;
+  color: #FFF;
   font-size: 18px;
-  line-height: 1.5em;
-}
+  line-height: 1.5em; }
 
 #page-title {
-  color: white;
+  color: #FFF;
   margin: 0 auto 20px;
   text-align: center;
-  text-transform: uppercase;
-}
-
-.top-banner img {
-  width: 100%;
-  padding-top: 50px;
-}
+  text-transform: uppercase; }
 
 .bio-banner {
   background-size: cover;
   background-repeat: no-repeat;
-  color: #EEFFED;
+  color: #FFF;
   font-size: 18px;
-  line-height: 1.5em;
-}
+  line-height: 1.9em; }
 
 #patricia-bio {
-  background-image: url('assets/images/patricia-banner.jpg');
+  background-image: url("assets/images/patricia-banner.jpg");
   padding: 40px 30% 40px 40px;
   text-align: left;
-  background-position: 100%;
-}
+  background-position: 100%; }
 
 #doug-bio {
-  background-image: url('assets/images/doug-banner-blur.jpg');
+  background-image: url("assets/images/doug-banner-blur.jpg");
   padding: 40px 40px 40px 30%;
-  text-align: right;
-  /*background-position: 0%;*/
-}
+  text-align: right; }
+
+.bio-section {
+  padding-top: 50px; }
 
 .bio-title {
   margin: 0;
   font-size: 32px;
   padding-bottom: 20px;
   text-transform: uppercase;
-  color: #EEFFED;
-}
+  color: #FFF; }
 
 .bio img {
   width: 100%;
-  position: absolute;
-}
+  position: absolute; }
 
 .form-title {
   text-align: center;
-  color: #EEFFED;
+  color: #FFF;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-size: 32px;
-}
+  font-size: 32px; }
 
 .contact-form {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
-}
+  text-align: center; }
 
 .contact-form input, .contact-form textarea {
   display: block;
@@ -174,44 +230,69 @@ body {
   border-radius: 3px;
   border: 1px solid #7B637F;
   font-size: 18px;
-  padding: 5px;
-}
+  padding: 5px; }
 
 .contact-form textarea {
-  resize: none;
-}
+  resize: none; }
 
-.contact-form button {
-  background-color: #7B637F;
-  color: #EEFFED;
-  border: 1px solid #EEFFED;
-  border-radius: 5px;
-  font-size: 18px;
-  padding: 4px 12px;
-}
-
-.contact-form button:hover {
-  background-color: #2C1425;
-}
+.g-recaptcha {
+  display: inline-block;
+  margin: 20px auto; }
 
 #submit-button {
-  margin-bottom: 30px;
-}
+  margin: 30px auto;
+  width: 150px;
+  background-color: #7B637F;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 4px 12px; }
+
+#submit-button:hover {
+  background-color: #2C1425; }
+
+#confirmation {
+  text-align: center;
+  padding-top: 10vh;
+  color: #FFF; }
 
 @media screen and (max-width: 1100px) {
   #promo-vid-wrapper {
     width: 600px;
-    height: 400px;
-  }
-}
-
+    height: 400px; } }
 @media screen and (max-width: 800px) {
   #promo-headline {
-    font-size: 22px;
-  }
+    font-size: 22px; }
 
   #promo-vid-wrapper {
     width: 300px;
-    height: 225px;
-  }
-}
+    height: 225px; }
+
+  .g-recaptcha {
+    transform: scale(0.77);
+    -webkit-transform: scale(0.77);
+    transform-origin: 0 0 0;
+    -webkit-transform-origin: 0 0 0; }
+
+  #patricia-bio {
+    background-image: url("assets/images/patricia-mobile.jpg");
+    padding: 400px 20px 20px 20px;
+    text-align: center;
+    background-size: auto;
+    background-position: 0% 0%; }
+    #patricia-bio p {
+      font-size: 16px; }
+
+  #doug-bio {
+    background-image: url("assets/images/doug-mobile.jpg");
+    padding: 400px 20px 20px 20px;
+    text-align: center;
+    background-size: auto; }
+    #doug-bio p {
+      font-size: 16px; }
+
+  .container {
+    width: 95%; } }
+
+/*# sourceMappingURL=style.css.map */
