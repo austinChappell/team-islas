@@ -1,9 +1,8 @@
 $color-primary: #7B637F;
 $color-secondary: #323667;
+$color-tertiary: #1A0D26;
 $color-white: #FFF;
 $color-black: #080B10;
-
-@import './super-hands';
 
 body {
   margin: 0;
@@ -25,6 +24,7 @@ body {
   background-color: $color-primary;
   border: none;
   color: $color-white;
+  padding: 0 50px;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
@@ -42,7 +42,7 @@ body {
 .navbar-default .navbar-nav>li>a {
   font-size: 16px;
   &:hover {
-    color: $color-secondary;
+    color: $color-tertiary;
   }
 }
 
@@ -212,13 +212,71 @@ body {
 }
 
 #submit-button:hover {
-  background-color: #2C1425;
+  background-color: $color-tertiary;
 }
 
 #confirmation {
   text-align: center;
   padding-top: 10vh;
   color: $color-white;
+}
+
+.sponsors {
+  text-align: center;
+  margin: 0 auto;
+  background: $color-primary;
+  padding: 10px;
+  ul {
+    margin: 0 auto;
+    padding-left: 0;
+    li {
+      padding: 15px 5px;
+      list-style: none;
+      display: inline;
+    }
+  }
+  img {
+    color: black;
+    width: 50px;
+    margin-bottom:2px;
+  }
+}
+
+.socialMedia {
+	text-align: center;
+	background-color: $color-tertiary;
+	min-height: 10px;
+  ul {
+    margin: 0 auto;
+    padding-left: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 15px 5px 0;
+      img {
+      	height: 30px;
+        width: 30px;
+      	background-color: #fffff3;
+        border: solid #fffff3 1px;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+.footer {
+	text-align: center;
+  background-color: $color-tertiary;
+	color: #FFFCE9;
+	margin-top: 0;
+	clear: both;
+  height: 70px;
+  padding: 0;
+  p {
+  	margin: 0;
+  	padding-top: 15px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -270,3 +328,5 @@ body {
     width: 95%;
   }
 }
+
+@import './super-hands';
